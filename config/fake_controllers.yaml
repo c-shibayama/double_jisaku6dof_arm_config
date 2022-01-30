@@ -1,0 +1,24 @@
+controller_list:
+  - name: fake_jisaku6def_arm_controller
+    type: $(arg execution_type)
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+  - name: fake_shifted_jisaku6dof_arm_controller
+    type: $(arg execution_type)
+    joints:
+      - shifted_joint1
+      - shifted_joint2
+      - shifted_joint3
+      - shifted_joint4
+      - shifted_joint5
+      - shifted_joint6
+initial:  # Define initial robot poses.
+  - group: jisaku6def_arm
+    pose: start
+  - group: shifted_jisaku6dof_arm
+    pose: shifted_start
