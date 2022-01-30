@@ -1,0 +1,1 @@
+double_jisaku6dof_arm_config
